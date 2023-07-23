@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .App-logo {
@@ -36,3 +38,95 @@
     transform: rotate(360deg);
   }
 }
+
+.image{
+  width: 30ex;
+  animation: logo-anim infinite 5s linear;
+}
+
+
+/* @keyframes logo-anim {
+  from{
+  
+    margin-left: -100%;
+    transform: translateX(30%);
+  }
+  to{
+    margin-right: -100%;
+    transform: translateX(-30%);
+  }
+}  */
+
+
+
+
+
+
+
+
+.clear,#submitbut{
+  cursor: pointer;
+}
+
+#alert{
+  /* border: 2px solid black; */
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center ;
+  background-color: rgb(235, 235, 156);
+  -webkit-animation: 1s;
+  animation: ytrans 1.2s;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  /* opacity: 0.5; */
+}
+
+@keyframes ytrans {
+  from{
+    opacity: 0.2;
+    
+  }
+  to{
+  
+    transform: translateY(8%);
+    opacity: 1;
+  }
+}
+
+#btns{
+  align-items: center;
+  display: flex;
+  padding-left: 30%;
+  /* border: 2px solid black; */
+  width: 70%;
+}
+
+#btns h2{
+  color: rgb(185, 7, 7);
+}
+
+#yes{
+  margin-left: 10%;
+  margin-right: 5%;
+  background-color: rgb(41, 184, 41);
+}
+#yes,#cancel{
+  cursor: pointer;
+  height: 3rem;
+  width: 4rem;
+  font-size: 1.3rem;
+  border-radius: 30%;
+  border: none;
+  
+}
+#cancel{
+  background-color: rgb(141, 12, 12);
+}
+
+#yes:hover{
+  box-shadow: 0 0.1rem 0.5rem   rgb(2, 85, 2);
+}
+#cancel:hover{
+  box-shadow: 0 0.1rem 0.5rem  rgb(70, 2, 2);
+}
+
